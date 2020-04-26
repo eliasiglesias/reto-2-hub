@@ -1,0 +1,9 @@
+img [src*="post"] {
+	position: relative;
+	display: inline-block;
+}
+
+.image-text {
+	position: absolute;
+	bottom: 0;
+}
