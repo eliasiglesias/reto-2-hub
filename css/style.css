@@ -16,6 +16,10 @@
 	color: var(--orange);
 }
 
+.border-left-dark {
+	border: 1px solid #eee;
+	border-left: 5px solid #333;
+}
 .border-left-pink {
 	border: 1px solid #eee;
 	border-left: 5px solid var(--hot-pink);
