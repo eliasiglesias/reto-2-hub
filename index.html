@@ -19,7 +19,7 @@
 	<body>
 		<div class="container">
 			<!-- Margen superior -->
-			<div class="row bg-dark text-center text-white-50 pt-3 pb-3">
+			<div class="row bg-dark text-center text-white-50 pt-3 pb-3 d-none d-lg-block">
 				<div class="col-md-3">
 					<span class="text-nowrap">
 						New York, NY
@@ -66,7 +66,7 @@
 			<!-- Logo y Navegacion -->
 
 			<div class="row mt-3">
-				<div class="col-8 col-lg-4 mt-lg-4 order-first">
+				<div class="col-8 pt-2 col-lg-4 pt-lg-4 order-first">
 					<span><img src="images/icons/logo-01.png" alt="" /></span>
 				</div>
 				<div class="col-4 col-lg-12 order-lg-3">
@@ -242,7 +242,7 @@
 			<!-- Trending y buscador -->
 
 			<div class="row mt-2 ml-2 ml-lg-0">
-				<div class="col-12 col-lg-3 d-lg-flex justify-content-lg-end">
+				<div class="col-12 col-lg-2">
 					<h6>
 						TRENDING NOW:
 					</h6>
@@ -252,7 +252,7 @@
 						<small>Interest rate angst trips up US equity bull market</small>
 					</h6>
 				</div>
-				<div class="col-12 col-lg-5 d-flex justify-content-lg-end">
+				<div class="col-12 col-lg-6 d-flex justify-content-lg-end">
 					<form class="form-inline my-2 my-lg-0">
 						<input
 							class="form-control mr-sm-2 rounded-pill"
@@ -313,10 +313,10 @@
 
 			<!-- Parte principal -->
 			<div class="row mt-5">
-				<div class="col-12 col-lg-7">
+				<div class="col-12 col-lg-8">
 					<!-- Tres Rows  -->
 					<div class="row">
-						<div class="col-12 border border-left-0 ">
+						<div class="col-12 ">
 						<nav class="navbar navbar-expand-lg navbar-light border-left-pink">
 							<a class="navbar-brand mb-0 h1" href="#"><span class="hot-pink">Entertainment</span></a>
 							<button
@@ -360,33 +360,38 @@
 							<h5 class="text-secondary"><span class="font-weight-bold">Music</span>  - Feb 18</h5>
 						</div>
 
-						<div class="col-3 mt-5 col-lg-2">
-							<span><img src="images/popular-post-04.jpg " alt="" class="img-fluid"></span>
-						</div>
-						<div class="col-9 mt-5 col-lg-4">
-							<h5>Donec metus orci, malesuada et lecus vitae</h5>
-							<h5 class="text-secondary"><span class="font-weight-bold">Music</span>  - Feb 17</h5>
-						</div>
+						<div class="col-12 col-lg-6">
+							<div class="row">
+								<div class="col-4 mt-5">
+									<span><img src="images/popular-post-04.jpg " alt="" class="img-fluid"></span>
+								</div>
+								<div class="col-8 mt-5">
+									<h5>Donec metus orci, malesuada et lecus vitae</h5>
+									<h5 class="text-secondary"><span class="font-weight-bold">Music</span>  - Feb 17</h5>
+								</div>
 
-						<div class="col-3 mt-5 col-lg-2">
-							<span><img src="images/popular-post-05.jpg " alt="" class="img-fluid"></span>
+								<div class="col-4 mt-5 mt-lg-4">
+									<span><img src="images/popular-post-05.jpg " alt="" class="img-fluid"></span>
+								</div>
+								<div class="col-8 mt-5 mt-lg-4">
+									<h5>Donec metus orci, malesuada et lecus vitae</h5>
+									<h5 class="text-secondary"><span class="font-weight-bold">Game</span>  - Feb 16</h5>
+								</div>
+								
+								<div class="col-4 mt-5 mt-lg-4">
+									<span><img src="images/popular-post-06.jpg" alt="" class="img-fluid"></span>
+								</div>
+								<div class="col-8 mt-5 mt-lg-4">
+									<h5>Donec metus orci, malesuada et lecus vitae</h5>
+									<h5 class="text-secondary"><span class="font-weight-bold">Celebrity</span>  - Feb 12</h5>
+								</div>
 						</div>
-						<div class="col-9 mt-5 col-lg-4">
-							<h5>Donec metus orci, malesuada et lecus vitae</h5>
-							<h5 class="text-secondary"><span class="font-weight-bold">Game</span>  - Feb 16</h5>
-						</div>
-						
-						<div class="col-3 mt-5 col-lg-2">
-							<span><img src="images/popular-post-06.jpg" alt="" class="img-fluid"></span>
-						</div>
-						<div class="col-9 mt-5 col-lg-4">
-							<h5>Donec metus orci, malesuada et lecus vitae</h5>
-							<h5 class="text-secondary"><span class="font-weight-bold">Celebrity</span>  - Feb 12</h5>
-						</div>
+						</div> 
 					</div>
+					
 
 					<div class="row mt-5">
-						<div class="col-12 border border-left-0 ">
+						<div class="col-12 ">
 						<nav class="navbar navbar-expand-lg navbar-light border-left-green">
 							<a class="navbar-brand mb-0 h1" href="#"><span class="lime-green">Business</span></a>
 							<button
@@ -398,130 +403,144 @@
 								aria-expanded="false"
 								aria-label="Toggle navigation"
 							>
-								<span class="navbar-toggler-icon"></span>
-							</button>
-							<div class="collapse navbar-collapse" id="navbarSupportedContent">
-								<ul class="navbar-nav mr-auto">
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">All</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Finance</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Money & Markets</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Small Business</a>
-									</li>
-								</ul>
+									<span class="navbar-toggler-icon"></span>
+								</button>
+								<div class="collapse navbar-collapse" id="navbarSupportedContent">
+									<ul class="navbar-nav mr-auto">
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">All</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Finance</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Money & Markets</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Small Business</a>
+										</li>
+									</ul>
+								</div>
+								<a class="text-secondary" href="#">View all -></a>
+							</nav>
 							</div>
-							<a class="text-secondary" href="#">View all -></a>
-						</nav>
-						</div>
-						<div class="col-12 mt-4">
-							<span><img src="images/post-10.jpg" alt="" class="img-fluid"></span>
-							<h3 class="mt-4">Bitcoin lorem ipsum dolor sit amet consectetur</h3>
-							<h5 class="text-secondary"><span class="font-weight-bold">Finance</span>  - Feb 18</h5>
-						</div>
+							<div class="col-12 mt-4 col-lg-6">
+								<span><img src="images/post-10.jpg" alt="" class="img-fluid"></span>
+								<h3 class="mt-4">Bitcoin lorem ipsum dolor sit amet consectetur</h3>
+								<h5 class="text-secondary"><span class="font-weight-bold">Finance</span>  - Feb 18</h5>
+							</div>
 
-						<div class="col-3 mt-5">
-							<span><img src="images/post-11.jpg" alt="" class="img-fluid"></span>
-						</div>
-						<div class="col-9 mt-5">
-							<h5>Donec metus orci, malesuada et lecus vitae</h5>
-							<h5 class="text-secondary"><span class="font-weight-bold">Small Business</span>  - Feb 17</h5>
-						</div>
+							
+							<div class="col-12 col-lg-6">
+								<div class="row">
+									<div class="col-4 mt-5">
+										<span><img src="images/post-11.jpg" alt="" class="img-fluid"></span>
+									</div>
+									<div class="col-8 mt-5">
+										<h5>Donec metus orci, malesuada et lecus vitae</h5>
+										<h5 class="text-secondary"><span class="font-weight-bold">Small Business</span>  - Feb 17</h5>
+									</div>
 
-						<div class="col-3 mt-5">
-							<span><img src="images/post-12.jpg" alt="" class="img-fluid"></span>
+									<div class="col-4 mt-5 mt-lg-4">
+										<span><img src="images/post-12.jpg" alt="" class="img-fluid"></span>
+									</div>
+									<div class="col-8 mt-5 mt-lg-4">
+										<h5>Donec metus orci, malesuada et lecus vitae</h5>
+										<h5 class="text-secondary"><span class="font-weight-bold">Economy</span>  - Feb 16</h5>
+									</div>
+									
+									<div class="col-4 mt-5 mt-lg-4">
+										<span><img src="images/post-13.jpg" alt="" class="img-fluid"></span>
+									</div>
+									<div class="col-8 mt-5 mt-lg-4">
+										<h5>Donec metus orci, malesuada et lecus vitae</h5>
+										<h5 class="text-secondary"><span class="font-weight-bold">Money % Markets</span>  - Feb 12</h5>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="col-9 mt-5">
-							<h5>Donec metus orci, malesuada et lecus vitae</h5>
-							<h5 class="text-secondary"><span class="font-weight-bold">Economy</span>  - Feb 16</h5>
-						</div>
-						
-						<div class="col-3 mt-5">
-							<span><img src="images/post-13.jpg" alt="" class="img-fluid"></span>
-						</div>
-						<div class="col-9 mt-5">
-							<h5>Donec metus orci, malesuada et lecus vitae</h5>
-							<h5 class="text-secondary"><span class="font-weight-bold">Money % Markets</span>  - Feb 12</h5>
-						</div>
-					</div>
+							
 
 					<div class="row mt-5">
-						<div class="col-12 border border-left-0 ">
-						<nav class="navbar navbar-expand-lg navbar-light border-left-orange">
-							<a class="navbar-brand mb-0 h1" href="#"><span class="orange">Travel</span></a>
-							<button
-								class="navbar-toggler"
-								type="button"
-								data-toggle="collapse"
-								data-target="#navbarSupportedContent"
-								aria-controls="navbarSupportedContent"
-								aria-expanded="false"
-								aria-label="Toggle navigation"
-							>
-								<span class="navbar-toggler-icon"></span>
-							</button>
-							<div class="collapse navbar-collapse" id="navbarSupportedContent">
-								<ul class="navbar-nav mr-auto">
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">All</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Finance</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Money & Markets</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Small Business</a>
-									</li>
-								</ul>
+							<div class="col-12 ">
+							<nav class="navbar navbar-expand-lg navbar-light border-left-orange">
+								<a class="navbar-brand mb-0 h1" href="#"><span class="orange">Travel</span></a>
+								<button
+									class="navbar-toggler"
+									type="button"
+									data-toggle="collapse"
+									data-target="#navbarSupportedContent"
+									aria-controls="navbarSupportedContent"
+									aria-expanded="false"
+									aria-label="Toggle navigation"
+								>
+									<span class="navbar-toggler-icon"></span>
+								</button>
+								<div class="collapse navbar-collapse" id="navbarSupportedContent">
+									<ul class="navbar-nav mr-auto">
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">All</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Hotels</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Flights</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Beachs</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Culture</a>
+										</li>
+									</ul>
+								</div>
+								<a class="text-secondary" href="#">View all -></a>
+							</nav>
 							</div>
-							<a class="text-secondary" href="#">View all -></a>
-						</nav>
-						</div>
-						<div class="col-12 mt-4">
-							<span><img src="images/post-14.jpg" alt="" class="img-fluid"></span>
-							<h3 class="mt-4">You wish lorem ipsum dolor sit amet consectetur</h3>
-							<h5 class="text-secondary"><span class="font-weight-bold">Hotels</span>  - Feb 18</h5>
-						</div>
+							<div class="col-12 mt-4 col-lg-6">
+								<span><img src="images/post-14.jpg" alt="" class="img-fluid"></span>
+								<h3 class="mt-4">You wish lorem ipsum dolor sit amet consectetur</h3>
+								<h5 class="text-secondary"><span class="font-weight-bold">Hotels</span>  - Feb 18</h5>
+							</div>
 
-						<div class="col-3 mt-5">
-							<span><img src="images/post-15.jpg" alt="" class="img-fluid"></span>
-						</div>
-						<div class="col-9 mt-5">
-							<h5>Donec metus orci, malesuada et lecus vitae</h5>
-							<h5 class="text-secondary"><span class="font-weight-bold">Beach</span>  - Feb 17</h5>
-						</div>
+							<div class="col-12 col-lg-6">
+								<div class="row">
+									<div class="col-4 mt-5">
+										<span><img src="images/post-15.jpg" alt="" class="img-fluid"></span>
+									</div>
+									<div class="col-8 mt-5">
+										<h5>Donec metus orci, malesuada et lecus vitae</h5>
+										<h5 class="text-secondary"><span class="font-weight-bold">Beach</span>  - Feb 17</h5>
+									</div>
 
-						<div class="col-3 mt-5">
-							<span><img src="images/post-16.jpg" alt="" class="img-fluid"></span>
-						</div>
-						<div class="col-9 mt-5">
-							<h5>Donec metus orci, malesuada et lecus vitae</h5>
-							<h5 class="text-secondary"><span class="font-weight-bold">Flight</span>  - Feb 16</h5>
-						</div>
-						
-						<div class="col-3 mt-5">
-							<span><img src="images/post-17.jpg" alt="" class="img-fluid"></span>
-						</div>
-						<div class="col-9 mt-5">
-							<h5>Donec metus orci, malesuada et lecus vitae</h5>
-							<h5 class="text-secondary"><span class="font-weight-bold">Culture</span>  - Feb 12</h5>
-						</div>
+									<div class="col-4 mt-5">
+										<span><img src="images/post-16.jpg" alt="" class="img-fluid"></span>
+									</div>
+									<div class="col-8 mt-5">
+										<h5>Donec metus orci, malesuada et lecus vitae</h5>
+										<h5 class="text-secondary"><span class="font-weight-bold">Flight</span>  - Feb 16</h5>
+									</div>
+									
+									<div class="col-4 mt-5">
+										<span><img src="images/post-17.jpg" alt="" class="img-fluid"></span>
+									</div>
+									<div class="col-8 mt-5">
+										<h5>Donec metus orci, malesuada et lecus vitae</h5>
+										<h5 class="text-secondary"><span class="font-weight-bold">Culture</span>  - Feb 12</h5>
+									</div>
+								</div>
+							</div>
 					</div>
+					
 					<!-- Fin tres Rows -->
 
 				</div>
 
 				<!-- Parte Principal(Margen derecho) -->
-				<div class="col-12 mt-5 d-flex flex-column col-lg-5 mt-lg-0">
+				<div class="col-12 mt-5 d-flex flex-column col-lg-4 mt-lg-0">
 					<!-- Most popular -->
 					<h3 class="font-weight-bold py-3 pl-3 border">Most popular</h3>
 					<h5 class="mt-5 mt-lg-2 text-secondary text-justify d-flex "><span class="bg-secondary text-white rounded px-3 py-1 mr-4 align-self-center">1</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>

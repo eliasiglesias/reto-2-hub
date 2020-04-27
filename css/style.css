@@ -17,14 +17,17 @@
 }
 
 .border-left-pink {
+	border: 1px solid #eee;
 	border-left: 5px solid var(--hot-pink);
 }
 
 .border-left-green {
+	border: 1px solid #eee;
 	border-left: 5px solid var(--lime-green);
 }
 
 .border-left-orange {
+	border: 1px solid #eee;
 	border-left: 5px solid var(--orange);
 }
 
