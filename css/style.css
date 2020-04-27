@@ -1,6 +1,6 @@
 :root {
 	--hot-pink: hotpink;
-	--lime-green: limegreen;
+	--lime-green: #15a752;
 	--orange: rgb(230, 85, 69);
 }
 
@@ -33,6 +33,13 @@
 .border-left-orange {
 	border: 1px solid #eee;
 	border-left: 5px solid var(--orange);
+}
+.text-grey {
+	color: #bbb;
+}
+
+.bg-green {
+	background-color: #17b978;
 }
 
 img [src*="post"] {
