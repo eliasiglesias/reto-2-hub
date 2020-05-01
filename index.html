@@ -7,7 +7,9 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<link
 			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
 		/>
 		<link
 			rel="stylesheet"
@@ -17,55 +19,58 @@
 		<title>MagNews Page</title>
 	</head>
 	<body>
-		<div class="container">
-			<!-- Margen superior -->
-			<div class="row bg-dark text-center text-white-50 pt-3 pb-3 d-none d-md-block">
-				<div class="col-3">
-					<span class="text-nowrap">
-						New York, NY
-						<img src="images/icons/icon-night.png" alt="" />
-						HI 58º LO 56º
-					</span>
-				</div>
+		<!-- Margen superior -->
+		<div class="container-fluid bg-dark-grey d-none d-md-block">
+			<div class="container">
+				<div class="row text-center text-grey pt-3 pb-3 text-nowrap">
+					<div class="col-4">
+						<span>
+							New York, NY
+							<img src="images/icons/icon-night.png" alt="" />
+							HI 58º LO 56º
+						</span>
+					</div>
 
-				<div class="col-1">
-					<a href="" class="text-reset">About</a>
-				</div>
-				<div class="col-1">
-					<a href="" class="text-reset">Contact</a>
-				</div>
-				<div class="col-1">
-					<a href="" class="text-reset text-nowrap">Sign up </a>
-				</div>
-				<div class="col-1">
-					<a href="" class="text-reset">Log in</a>
-				</div>
+					<div class="col-1">
+						<a href="" class="text-reset">About</a>
+					</div>
+					<div class="col-1">
+						<a href="" class="text-reset">Contact</a>
+					</div>
+					<div class="col-1">
+						<a href="" class="text-reset">Sign up </a>
+					</div>
+					<div class="col-1">
+						<a href="" class="text-reset">Log in</a>
+					</div>
 
-				<div class="col-2 offset-3">
-					<!-- iconos redes sociales -->
-					<a href="">
-						<i class="fab fa-facebook-f pr-2" style="color: #ccc;"></i>
-					</a>
-					<a href="">
-						<i class="fab fa-twitter pr-2" style="color: #ccc;"></i>
-					</a>
-					<a href="">
-						<i class="fab fa-pinterest-p pr-2" style="color: #ccc;"></i>
-					</a>
-					<a href="">
-						<i class="fab fa-vimeo-v pr-2" style="color: #ccc;"></i>
-					</a>
-					<a href="">
-						<i class="fab fa-youtube pr-2" style="color: #ccc;"></i>
-					</a>
+					<div class="col-2 offset-2">
+						<!-- iconos redes sociales -->
+						<a href="">
+							<i class="fab fa-facebook-f pr-2" style="color: #ccc;"></i>
+						</a>
+						<a href="">
+							<i class="fab fa-twitter pr-2" style="color: #ccc;"></i>
+						</a>
+						<a href="">
+							<i class="fab fa-pinterest-p pr-2" style="color: #ccc;"></i>
+						</a>
+						<a href="">
+							<i class="fab fa-vimeo-v pr-2" style="color: #ccc;"></i>
+						</a>
+						<a href="">
+							<i class="fab fa-youtube pr-2" style="color: #ccc;"></i>
+						</a>
+					</div>
 				</div>
 			</div>
+		</div>
+		<!-- Fin margen superior -->
 
-			<!-- Fin margen superior -->
-
+		<div class="container">
 			<!-- Logo y Navegacion -->
 
-			<div class="row mt-3">
+			<div class="row mt-3 shadow-bottom-grey mb-4">
 				<div class="col-8 pt-2 col-md-4 pt-md-4 order-first">
 					<span><img src="images/icons/logo-01.png" alt="" /></span>
 				</div>
@@ -98,6 +103,9 @@
 									>
 										Home
 									</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="index.html">Home Page</a>
+									</div>
 								</li>
 								<li class="nav-item dropdown">
 									<a
@@ -221,9 +229,13 @@
 										Features
 									</a>
 									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-										<a class="dropdown-item" href="#">Action</a>
-										<a class="dropdown-item" href="#">Another action</a>
-										<a class="dropdown-item" href="#">Something else here</a>
+										<a class="dropdown-item" href="category.html">Category</a>
+										<a class="dropdown-item" href="bloglist.html">Blog</a>
+										<a class="dropdown-item" href="blogdetails.html"
+											>Blog details</a
+										>
+										<a class="dropdown-item" href="contact.html">Contact Us</a>
+										<a class="dropdown-item" href="about.html">About Us</a>
 									</div>
 								</li>
 							</ul>
@@ -241,7 +253,7 @@
 
 			<!-- Trending y buscador -->
 
-			<div class="row mt-2 ml-2 ml-md-0">
+			<div class="row mt-2 ml-2 ml-md-0 mt-md-4">
 				<div class="col-12 col-md-2">
 					<h6>
 						TRENDING NOW:
@@ -253,14 +265,16 @@
 					</h6>
 				</div>
 				<div class="col-12 col-md-6 d-flex justify-content-md-end">
-					<form class="form-inline my-2 my-md-0">
+					<form
+						class="form-inline my-2 my-md-0 border rounded-pill d-flex flex-nowrap"
+					>
 						<input
-							class="form-control mr-sm-2 rounded-pill"
+							class="form-control mr-sm-2 rounded-pill border-0"
 							type="search"
 							placeholder="Search"
 							aria-label="Search"
 						/>
-						<!-- <span><i class="fas fa-search"></i></span> -->
+						<i class="fas fa-search pr-3 text-secondary"></i>
 					</form>
 				</div>
 			</div>
@@ -270,7 +284,7 @@
 			<!-- Imagenes Header -->
 
 			<div class="row mt-3">
-				<div class="col-12 col-md-6 p-md-0 pr-md-1">
+				<div class="col-12 col-md-6 p-md-0 pr-md-1 text-position">
 					<span><img src="images/post-01.jpg" alt="" class="img-fluid" /></span>
 					<div class="image-text pl-4 pr-4 text-white">
 						<h6><small class="border font-weight-bold">Business</small></h6>
@@ -278,14 +292,20 @@
 						<h6><small>Jack Sims - Feb 16</small></h6>
 					</div>
 				</div>
-				<div class="col-12 col-md-6 d-flex flex-column p-md-0">
-					<span><img src="images/post-02.jpg" alt="" class="img-fluid" /></span>
-					<div class="image-text pl-4 pr-4 text-white">
-						<h6><small class="border font-weight-bold">Culture</small></h6>
-						<h5>London ipsum dolor sit amet consectetur adipiscing elit.</h5>
+				<div class="col-12 mt-1 mt-md-0 col-md-6 d-flex flex-column p-md-0">
+					<div class="text-position">
+						<span
+							><img src="images/post-02.jpg" alt="" class="img-fluid"
+						/></span>
+						<div class="image-text pl-4 pr-4 text-white">
+							<h6><small class="border font-weight-bold">Culture</small></h6>
+							<h6>London ipsum dolor sit amet consectetur adipiscing elit.</h6>
+						</div>
 					</div>
 					<div class="row pt-md-1">
-						<div class="col-12 col-md-6 p-md-0 pl-md-3">
+						<div
+							class="col-12 mt-1 mt-md-0 col-md-6 p-md-0 pl-md-3 text-position"
+						>
 							<span
 								><img src="images/post-03.jpg" alt="" class="img-fluid"
 							/></span>
@@ -293,16 +313,18 @@
 								<h6>
 									<small class="border font-weight-bold">Life Style</small>
 								</h6>
-								<h5>Pellentesque dui nibh, pellen tesque ut dapibus ut</h5>
+								<h6>Pellentesque dui nibh, pellen tesque ut dapibus ut</h6>
 							</div>
 						</div>
-						<div class="col-12 col-md-6 p-md-0 pl-md-1 pr-md-3">
+						<div
+							class="col-12 mt-1 mt-md-0 col-md-6 p-md-0 pl-md-1 pr-md-3 text-position"
+						>
 							<span
 								><img src="images/post-04.jpg" alt="" class="img-fluid"
 							/></span>
 							<div class="image-text pl-4 pr-4 text-white">
 								<h6><small class="border font-weight-bold">Sport</small></h6>
-								<h5>Motobike Vestibulum venenatis purus nec nibh volutpat</h5>
+								<h6>Motobike Vestibulum venenatis purus nec nibh volutpat</h6>
 							</div>
 						</div>
 					</div>
@@ -316,249 +338,373 @@
 				<div class="col-12 col-md-8">
 					<!-- Tres Rows  -->
 					<div class="row">
-						<div class="col-12 ">
-						<nav class="navbar navbar-expand-md navbar-light border-left-pink">
-							<a class="navbar-brand mb-0 h1" href="#"><span class="hot-pink">Entertainment</span></a>
-							<button
-								class="navbar-toggler"
-								type="button"
-								data-toggle="collapse"
-								data-target="#navbarSupportedContent"
-								aria-controls="navbarSupportedContent"
-								aria-expanded="false"
-								aria-label="Toggle navigation"
-							>
-								<span class="navbar-toggler-icon"></span>
-							</button>
-							<div class="collapse navbar-collapse" id="navbarSupportedContent">
-								<ul class="navbar-nav mr-auto">
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">All</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Celebrity</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Movies</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Music</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Games</a>
-									</li>
-								</ul>
+						<div class="col-12">
+							<div class="border-left-pink d-flex flex-row align-items-center">
+								<a class="navbar-brand mb-0 h1 pl-2" href="#"
+									><span class="hot-pink">Entertainment</span></a
+								>
+								<div class="d-block d-lg-none ml-auto mr-auto pb-2">
+									<h2>...</h2>
+								</div>
+
+								<div class="d-none d-lg-block mr-auto">
+									<div class="list-group d-flex flex-row mr-auto">
+										<a
+											href="#"
+											class="list-group-item list-group-item-action border-0 px-2 text-secondary"
+										>
+											All
+										</a>
+										<a
+											href="#"
+											class="list-group-item list-group-item-action border-0 px-2 text-secondary"
+											>Celebrity</a
+										>
+										<a
+											href="#"
+											class="list-group-item list-group-item-action border-0 px-2 text-secondary"
+											>Movies</a
+										>
+										<a
+											href="#"
+											class="list-group-item list-group-item-action border-0 px-2 text-secondary"
+											>Music</a
+										>
+										<a
+											href="#"
+											class="list-group-item list-group-item-action border-0 px-2 text-secondary"
+											>Games</a
+										>
+									</div>
+								</div>
+								<a class="text-secondary text-nowrap" href="#">View all -></a>
 							</div>
-							<a class="text-secondary" href="#">View all -></a>
-						</nav>
 						</div>
 
 						<div class="col-12 mt-4 col-md-6">
-							<span><img src="images/post-05.jpg" alt="" class="img-fluid"></span>
-							<h3 class="mt-4">American live music lorem ipsum dolor sit amet consectetur</h3>
-							<h5 class="text-secondary"><span class="font-weight-bold">Music</span>  - Feb 18</h5>
+							<span
+								><img src="images/post-05.jpg" alt="" class="img-fluid"
+							/></span>
+							<h4 class="mt-4">
+								American live music lorem ipsum dolor sit amet consectetur
+							</h4>
+							<h6 class="text-secondary">
+								<span class="font-weight-bold">Music</span> - Feb 18
+							</h6>
 						</div>
 
 						<div class="col-12 col-md-6">
 							<div class="row">
 								<div class="col-4 mt-5">
-									<span><img src="images/post-06.jpg " alt="" class="img-fluid"></span>
+									<span
+										><img src="images/post-06.jpg " alt="" class="img-fluid"
+									/></span>
 								</div>
 								<div class="col-8 mt-5">
-									<h5>Donec metus orci, malesuada et lecus vitae</h5>
-									<h5 class="text-secondary"><span class="font-weight-bold">Music</span>  - Feb 17</h5>
+									<h6>Donec metus orci, malesuada et lecus vitae</h6>
+									<h6 class="text-secondary">
+										<span class="font-weight-bold">Music</span> - Feb 17
+									</h6>
 								</div>
 
 								<div class="col-4 mt-5 mt-md-4">
-									<span><img src="images/post-07.jpg " alt="" class="img-fluid"></span>
+									<span
+										><img src="images/post-07.jpg " alt="" class="img-fluid"
+									/></span>
 								</div>
 								<div class="col-8 mt-5 mt-md-4">
-									<h5>Donec metus orci, malesuada et lecus vitae</h5>
-									<h5 class="text-secondary"><span class="font-weight-bold">Game</span>  - Feb 16</h5>
+									<h6>Donec metus orci, malesuada et lecus vitae</h6>
+									<h6 class="text-secondary">
+										<span class="font-weight-bold">Game</span> - Feb 16
+									</h6>
 								</div>
-								
+
 								<div class="col-4 mt-5 mt-md-4">
-									<span><img src="images/post-08.jpg" alt="" class="img-fluid"></span>
+									<span
+										><img src="images/post-08.jpg" alt="" class="img-fluid"
+									/></span>
 								</div>
 								<div class="col-8 mt-5 mt-md-4">
-									<h5>Donec metus orci, malesuada et lecus vitae</h5>
-									<h5 class="text-secondary"><span class="font-weight-bold">Celebrity</span>  - Feb 12</h5>
-								</div>
-							</div>
-						</div> 
-					</div>
-					
-
-					<div class="row mt-5">
-						<div class="col-12 ">
-						<nav class="navbar navbar-expand-md navbar-light border-left-green">
-							<a class="navbar-brand mb-0 h1" href="#"><span class="lime-green">Business</span></a>
-							<button
-								class="navbar-toggler"
-								type="button"
-								data-toggle="collapse"
-								data-target="#navbarSupportedContent"
-								aria-controls="navbarSupportedContent"
-								aria-expanded="false"
-								aria-label="Toggle navigation"
-							>
-									<span class="navbar-toggler-icon"></span>
-								</button>
-								<div class="collapse navbar-collapse" id="navbarSupportedContent">
-									<ul class="navbar-nav mr-auto">
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">All</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">Finance</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">Money & Markets</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">Small Business</a>
-										</li>
-									</ul>
-								</div>
-								<a class="text-secondary" href="#">View all -></a>
-							</nav>
-							</div>
-							<div class="col-12 mt-4 col-md-6">
-								<span><img src="images/post-10.jpg" alt="" class="img-fluid"></span>
-								<h3 class="mt-4">Bitcoin lorem ipsum dolor sit amet consectetur</h3>
-								<h5 class="text-secondary"><span class="font-weight-bold">Finance</span>  - Feb 18</h5>
-							</div>
-
-							
-							<div class="col-12 col-md-6">
-								<div class="row">
-									<div class="col-4 mt-5">
-										<span><img src="images/post-11.jpg" alt="" class="img-fluid"></span>
-									</div>
-									<div class="col-8 mt-5">
-										<h5>Donec metus orci, malesuada et lecus vitae</h5>
-										<h5 class="text-secondary"><span class="font-weight-bold">Small Business</span>  - Feb 17</h5>
-									</div>
-
-									<div class="col-4 mt-5 mt-md-4">
-										<span><img src="images/post-12.jpg" alt="" class="img-fluid"></span>
-									</div>
-									<div class="col-8 mt-5 mt-md-4">
-										<h5>Donec metus orci, malesuada et lecus vitae</h5>
-										<h5 class="text-secondary"><span class="font-weight-bold">Economy</span>  - Feb 16</h5>
-									</div>
-									
-									<div class="col-4 mt-5 mt-md-4">
-										<span><img src="images/post-13.jpg" alt="" class="img-fluid"></span>
-									</div>
-									<div class="col-8 mt-5 mt-md-4">
-										<h5>Donec metus orci, malesuada et lecus vitae</h5>
-										<h5 class="text-secondary"><span class="font-weight-bold">Money % Markets</span>  - Feb 12</h5>
-									</div>
+									<h6>Donec metus orci, malesuada et lecus vitae</h6>
+									<h6 class="text-secondary">
+										<span class="font-weight-bold">Celebrity</span> - Feb 12
+									</h6>
 								</div>
 							</div>
 						</div>
-							
+					</div>
 
 					<div class="row mt-5">
-							<div class="col-12 ">
-							<nav class="navbar navbar-expand-md navbar-light border-left-orange">
-								<a class="navbar-brand mb-0 h1" href="#"><span class="orange">Travel</span></a>
-								<button
-									class="navbar-toggler"
-									type="button"
-									data-toggle="collapse"
-									data-target="#navbarSupportedContent"
-									aria-controls="navbarSupportedContent"
-									aria-expanded="false"
-									aria-label="Toggle navigation"
+						<div class="col-12">
+							<div class="border-left-green d-flex flex-row align-items-center">
+								<a class="navbar-brand mb-0 h1 pl-2" href="#"
+									><span class="lime-green">Business</span></a
 								>
-									<span class="navbar-toggler-icon"></span>
-								</button>
-								<div class="collapse navbar-collapse" id="navbarSupportedContent">
-									<ul class="navbar-nav mr-auto">
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">All</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">Hotels</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">Flights</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">Beachs</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#">Culture</a>
-										</li>
-									</ul>
+								<div class="d-block d-lg-none ml-auto mr-auto pb-2">
+									<h2>...</h2>
 								</div>
-								<a class="text-secondary" href="#">View all -></a>
-							</nav>
-							</div>
-							<div class="col-12 mt-4 col-md-6">
-								<span><img src="images/post-14.jpg" alt="" class="img-fluid"></span>
-								<h3 class="mt-4">You wish lorem ipsum dolor sit amet consectetur</h3>
-								<h5 class="text-secondary"><span class="font-weight-bold">Hotels</span>  - Feb 18</h5>
-							</div>
 
-							<div class="col-12 col-md-6">
-								<div class="row">
-									<div class="col-4 mt-5">
-										<span><img src="images/post-15.jpg" alt="" class="img-fluid"></span>
-									</div>
-									<div class="col-8 mt-5">
-										<h5>Donec metus orci, malesuada et lecus vitae</h5>
-										<h5 class="text-secondary"><span class="font-weight-bold">Beach</span>  - Feb 17</h5>
-									</div>
-
-									<div class="col-4 mt-5">
-										<span><img src="images/post-16.jpg" alt="" class="img-fluid"></span>
-									</div>
-									<div class="col-8 mt-5">
-										<h5>Donec metus orci, malesuada et lecus vitae</h5>
-										<h5 class="text-secondary"><span class="font-weight-bold">Flight</span>  - Feb 16</h5>
-									</div>
-									
-									<div class="col-4 mt-5">
-										<span><img src="images/post-17.jpg" alt="" class="img-fluid"></span>
-									</div>
-									<div class="col-8 mt-5">
-										<h5>Donec metus orci, malesuada et lecus vitae</h5>
-										<h5 class="text-secondary"><span class="font-weight-bold">Culture</span>  - Feb 12</h5>
+								<div class="d-none d-lg-block mr-auto">
+									<div class="list-group d-flex flex-row mr-auto">
+										<a
+											href="#"
+											class="list-group-item list-group-item-action border-0 px-2 text-secondary"
+										>
+											All
+										</a>
+										<a
+											href="#"
+											class="list-group-item list-group-item-action border-0 px-2 text-secondary"
+											>Finance</a
+										>
+										<a
+											href="#"
+											class="list-group-item list-group-item-action border-0 px-2 text-secondary text-nowrap"
+											>Money & Markets</a
+										>
+										<a
+											href="#"
+											class="list-group-item list-group-item-action border-0 px-2 text-secondary text-nowrap"
+											>Small Business</a
+										>
 									</div>
 								</div>
+								<a class="text-secondary text-nowrap" href="#">View all -></a>
 							</div>
+						</div>
+						<div class="col-12 mt-4 col-md-6">
+							<span
+								><img src="images/post-10.jpg" alt="" class="img-fluid"
+							/></span>
+							<h4 class="mt-4">
+								Bitcoin lorem ipsum dolor sit amet consectetur
+							</h4>
+							<h6 class="text-secondary">
+								<span class="font-weight-bold">Finance</span> - Feb 18
+							</h6>
+						</div>
+
+						<div class="col-12 col-md-6">
+							<div class="row">
+								<div class="col-4 mt-5">
+									<span
+										><img src="images/post-11.jpg" alt="" class="img-fluid"
+									/></span>
+								</div>
+								<div class="col-8 mt-5">
+									<h6>Donec metus orci, malesuada et lecus vitae</h6>
+									<h6 class="text-secondary">
+										<span class="font-weight-bold">Small Business</span> - Feb
+										17
+									</h6>
+								</div>
+
+								<div class="col-4 mt-5 mt-md-4">
+									<span
+										><img src="images/post-12.jpg" alt="" class="img-fluid"
+									/></span>
+								</div>
+								<div class="col-8 mt-5 mt-md-4">
+									<h6>Donec metus orci, malesuada et lecus vitae</h6>
+									<h6 class="text-secondary">
+										<span class="font-weight-bold">Economy</span> - Feb 16
+									</h6>
+								</div>
+
+								<div class="col-4 mt-5 mt-md-4">
+									<span
+										><img src="images/post-13.jpg" alt="" class="img-fluid"
+									/></span>
+								</div>
+								<div class="col-8 mt-5 mt-md-4">
+									<h6>Donec metus orci, malesuada et lecus vitae</h6>
+									<h6 class="text-secondary">
+										<span class="font-weight-bold">Money % Markets</span> - Feb
+										12
+									</h6>
+								</div>
+							</div>
+						</div>
 					</div>
-					
-					<!-- Fin tres Rows -->
 
+					<div class="row mt-5">
+						<div class="col-12">
+							<div
+								class="border-left-orange d-flex flex-row align-items-center"
+							>
+								<a class="navbar-brand mb-0 h1 pl-2" href="#"
+									><span class="orange">Travel</span></a
+								>
+								<div class="d-block d-lg-none ml-auto mr-auto pb-2">
+									<h2>...</h2>
+								</div>
+
+								<div class="d-none d-lg-block mr-auto">
+									<div class="list-group d-flex flex-row mr-auto">
+										<a
+											href="#"
+											class="list-group-item list-group-item-action border-0 px-2 text-secondary"
+										>
+											All
+										</a>
+										<a
+											href="#"
+											class="list-group-item list-group-item-action border-0 px-2 text-secondary"
+											>Hotels</a
+										>
+										<a
+											href="#"
+											class="list-group-item list-group-item-action border-0 px-2 text-secondary text-nowrap"
+											>Flights</a
+										>
+										<a
+											href="#"
+											class="list-group-item list-group-item-action border-0 px-2 text-secondary text-nowrap"
+											>Beachs</a
+										>
+										<a
+											href="#"
+											class="list-group-item list-group-item-action border-0 px-2 text-secondary text-nowrap"
+											>Culture</a
+										>
+									</div>
+								</div>
+								<a class="text-secondary text-nowrap" href="#">View all -></a>
+							</div>
+						</div>
+						<div class="col-12 mt-4 col-md-6">
+							<span
+								><img src="images/post-14.jpg" alt="" class="img-fluid"
+							/></span>
+							<h4 class="mt-4">
+								You wish lorem ipsum dolor sit amet consectetur
+							</h4>
+							<h6 class="text-secondary">
+								<span class="font-weight-bold">Hotels</span> - Feb 18
+							</h6>
+						</div>
+
+						<div class="col-12 col-md-6">
+							<div class="row">
+								<div class="col-4 mt-5">
+									<span
+										><img src="images/post-15.jpg" alt="" class="img-fluid"
+									/></span>
+								</div>
+								<div class="col-8 mt-5">
+									<h6>Donec metus orci, malesuada et lecus vitae</h6>
+									<h6 class="text-secondary">
+										<span class="font-weight-bold">Beach</span> - Feb 17
+									</h6>
+								</div>
+
+								<div class="col-4 mt-5">
+									<span
+										><img src="images/post-16.jpg" alt="" class="img-fluid"
+									/></span>
+								</div>
+								<div class="col-8 mt-5">
+									<h6>Donec metus orci, malesuada et lecus vitae</h6>
+									<h6 class="text-secondary">
+										<span class="font-weight-bold">Flight</span> - Feb 16
+									</h6>
+								</div>
+
+								<div class="col-4 mt-5">
+									<span
+										><img src="images/post-17.jpg" alt="" class="img-fluid"
+									/></span>
+								</div>
+								<div class="col-8 mt-5">
+									<h6>Donec metus orci, malesuada et lecus vitae</h6>
+									<h6 class="text-secondary">
+										<span class="font-weight-bold">Culture</span> - Feb 12
+									</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Fin tres Rows -->
 				</div>
 
 				<!-- Parte Principal(Margen derecho) -->
 				<div class="col-12 mt-5 d-flex flex-column col-md-4 mt-md-0">
 					<!-- Most popular -->
-					<h3 class="font-weight-bold py-3 pl-3 border-left-dark">Most popular</h3>
-					<h5 class="mt-5 mt-md-2 text-secondary text-justify d-flex "><span class="bg-secondary text-white rounded px-3 py-1 mr-4 align-self-center">1</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
-					<h5 class="mt-5 mt-md-2 text-secondary text-justify d-flex "><span class="bg-secondary text-white rounded px-3 py-1 mr-4 align-self-center">2</span> Proin velit consectetur non neque</h5>
-					<h5 class="mt-5 mt-md-2 text-secondary text-justify d-flex "><span class="bg-secondary text-white rounded px-3 py-1 mr-4 align-self-center">3</span> Nunc vestibulum, enim vitae condimen-tum volutpat lobortis ante</h5>
-					<h5 class="mt-5 mt-md-2 text-secondary text-justify d-flex "><span class="bg-secondary text-white rounded px-3 py-1 mr-4 align-self-center">4</span> Proin velit justo consectetur non neque elementum</h5>
-					<h5 class="mt-5 mt-md-2 text-secondary text-justify d-flex "><span class="bg-secondary text-white rounded px-3 py-1 mr-4 align-self-center">5</span> Proin velit consectetur non neque</h5>
+					<h5 class="font-weight-bold py-3 pl-3 border-left-dark">
+						Most popular
+					</h5>
+					<h6 class="mt-5 mt-md-2 text-secondary text-justify d-flex">
+						<span
+							class="bg-secondary text-white rounded px-3 py-1 mr-4 align-self-center"
+							>1</span
+						>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit
+					</h6>
+					<h6 class="mt-5 mt-md-2 text-secondary text-justify d-flex">
+						<span
+							class="bg-secondary text-white rounded px-3 py-1 mr-4 align-self-center"
+							>2</span
+						>
+						Proin velit consectetur non neque
+					</h6>
+					<h6 class="mt-5 mt-md-2 text-secondary text-justify d-flex">
+						<span
+							class="bg-secondary text-white rounded px-3 py-1 mr-4 align-self-center"
+							>3</span
+						>
+						Nunc vestibulum, enim vitae condimen-tum volutpat lobortis ante
+					</h6>
+					<h6 class="mt-5 mt-md-2 text-secondary text-justify d-flex">
+						<span
+							class="bg-secondary text-white rounded px-3 py-1 mr-4 align-self-center"
+							>4</span
+						>
+						Proin velit justo consectetur non neque elementum
+					</h6>
+					<h6 class="mt-5 mt-md-2 text-secondary text-justify d-flex">
+						<span
+							class="bg-secondary text-white rounded px-3 py-1 mr-4 align-self-center"
+							>5</span
+						>
+						Proin velit consectetur non neque
+					</h6>
 					<!-- Fin Most Popular -->
 
 					<!-- Banner -->
-					<span class="mt-5 align-self-center"><img src="images/banner-02.jpg" alt="" class="img-fluid"/></span>
+					<span class="mt-5 align-self-center"
+						><img src="images/banner-02.jpg" alt="" class="img-fluid"
+					/></span>
 					<!-- Fin Banner -->
 
 					<!-- Stay Connected -->
-					<h3 class="mt-5 font-weight-bold py-3 pl-3 border-left-dark">Stay Connected</h3>
-					<h5 class="mt-3 text-secondary d-flex justify-content-center"><img src="images/RRSS/facebook.png" alt="" class="rounded mr-3"><span class="mr-auto">6879 Fans</span><span class="font-weight-bold">LIKE</span></h5>
-					<h5 class="mt-3 text-secondary d-flex justify-content-center"><img src="images/RRSS/twitter.png" alt="" class="rounded mr-3"><span class="mr-auto">568 Followers</span><span class="font-weight-bold">FOLLOW</span></h5>
-					<h5 class="mt-3 text-secondary d-flex justify-content-center"><img src="images/RRSS/youtube.png" alt="" class="rounded mr-3"><span class="mr-auto">5039 Subscribers</span><span class="font-weight-bold">SUBSCRIBE</span></h5>
+					<h5 class="mt-5 font-weight-bold py-3 pl-3 border-left-dark">
+						Stay Connected
+					</h5>
+					<h6 class="mt-3 text-secondary d-flex justify-content-center">
+						<img
+							src="images/RRSS/facebook.png"
+							alt=""
+							class="rounded mr-3"
+						/><span class="mr-auto">6879 Fans</span
+						><span class="font-weight-bold">LIKE</span>
+					</h6>
+					<h6 class="mt-3 text-secondary d-flex justify-content-center">
+						<img
+							src="images/RRSS/twitter.png"
+							alt=""
+							class="rounded mr-3"
+						/><span class="mr-auto">568 Followers</span
+						><span class="font-weight-bold">FOLLOW</span>
+					</h6>
+					<h6 class="mt-3 text-secondary d-flex justify-content-center">
+						<img
+							src="images/RRSS/youtube.png"
+							alt=""
+							class="rounded mr-3"
+						/><span class="mr-auto">5039 Subscribers</span
+						><span class="font-weight-bold">SUBSCRIBE</span>
+					</h6>
 				</div>
 				<!-- FIN Parte Principal(Margen derecho) -->
 			</div>
@@ -567,7 +713,9 @@
 			<!-- banner -->
 			<div class="row">
 				<div class="col-12 mt-5 d-flex justify-content-center">
-					<span><img src="images/banner-01.jpg" alt="" class="img-fluid"></span>
+					<span
+						><img src="images/banner-01.jpg" alt="" class="img-fluid"
+					/></span>
 				</div>
 			</div>
 
@@ -578,76 +726,175 @@
 			<div class="row mt-5">
 				<!-- Articles -->
 				<div class="col-12 col-md-8">
-					<h3 class="font-weight-bold py-3 pl-3 border-left-dark">Latest Articles</h3>
+					<h5 class="font-weight-bold py-3 pl-3 border-left-dark">
+						Latest Articles
+					</h5>
 					<div class="row mt-5">
 						<div class="col-12 col-md-6">
-							<span><img src="images/latest-01.jpg" alt="" class="img-fluid mb-3"></span>
-							<h4>You wish lorem ipsum dolor sit amet consectetur</h4>
-							<h6 class="text-secondary"><span class="font-weight-bold">by John Alvarado</span> - Feb 18</h6>
+							<span
+								><img src="images/latest-01.jpg" alt="" class="img-fluid mb-3"
+							/></span>
+							<h5>You wish lorem ipsum dolor sit amet consectetur</h5>
+							<h6 class="text-secondary">
+								<span class="font-weight-bold">by John Alvarado</span> - Feb 18
+							</h6>
 						</div>
 						<div class="col-12 col-md-6">
-							<span><img src="images/latest-02.jpg" alt="" class="img-fluid mb-3 mt-5 mt-md-0"></span>
-							<h4>You wish lorem ipsum dolor sit amet consectetur</h4>
-							<h6 class="text-secondary"><span class="font-weight-bold">by John Alvarado</span> - Feb 16</h6>
+							<span
+								><img
+									src="images/latest-02.jpg"
+									alt=""
+									class="img-fluid mb-3 mt-5 mt-md-0"
+							/></span>
+							<h5>You wish lorem ipsum dolor sit amet consectetur</h5>
+							<h6 class="text-secondary">
+								<span class="font-weight-bold">by John Alvarado</span> - Feb 16
+							</h6>
 						</div>
 						<div class="col-12 col-md-6">
-							<span><img src="images/latest-03.jpg" alt="" class="img-fluid mb-3 mt-5"></span>
-							<h4>You wish lorem ipsum dolor sit amet consectetur</h4>
-							<h6 class="text-secondary"><span class="font-weight-bold">by John Alvarado</span> - Feb 15</h6>
+							<span
+								><img
+									src="images/latest-03.jpg"
+									alt=""
+									class="img-fluid mb-3 mt-5"
+							/></span>
+							<h5>You wish lorem ipsum dolor sit amet consectetur</h5>
+							<h6 class="text-secondary">
+								<span class="font-weight-bold">by John Alvarado</span> - Feb 15
+							</h6>
 						</div>
 						<div class="col-12 col-md-6">
-							<span><img src="images/latest-04.jpg" alt="" class="img-fluid mb-3 mt-5"></span>
-							<h4>You wish lorem ipsum dolor sit amet consectetur</h4>
-							<h6 class="text-secondary"><span class="font-weight-bold">by John Alvarado</span> - Feb 12</h6>
+							<span
+								><img
+									src="images/latest-04.jpg"
+									alt=""
+									class="img-fluid mb-3 mt-5"
+							/></span>
+							<h5>You wish lorem ipsum dolor sit amet consectetur</h5>
+							<h6 class="text-secondary">
+								<span class="font-weight-bold">by John Alvarado</span> - Feb 12
+							</h6>
 						</div>
 						<div class="col-12 col-md-6">
-							<span><img src="images/latest-05.jpg" alt="" class="img-fluid mb-3 mt-5"></span>
-							<h4>You wish lorem ipsum dolor sit amet consectetur</h4>
-							<h6 class="text-secondary"><span class="font-weight-bold">by John Alvarado</span> - Feb 10</h6>
+							<span
+								><img
+									src="images/latest-05.jpg"
+									alt=""
+									class="img-fluid mb-3 mt-5"
+							/></span>
+							<h5>You wish lorem ipsum dolor sit amet consectetur</h5>
+							<h6 class="text-secondary">
+								<span class="font-weight-bold">by John Alvarado</span> - Feb 10
+							</h6>
 						</div>
 						<div class="col-12 col-md-6">
-							<span><img src="images/latest-06.jpg" alt="" class="img-fluid mb-3 mt-5"></span>
-							<h4>You wish lorem ipsum dolor sit amet consectetur</h4>
-							<h6 class="text-secondary"><span class="font-weight-bold">by John Alvarado</span> - Feb 18</h6>
+							<span
+								><img
+									src="images/latest-06.jpg"
+									alt=""
+									class="img-fluid mb-3 mt-5"
+							/></span>
+							<h5>You wish lorem ipsum dolor sit amet consectetur</h5>
+							<h6 class="text-secondary">
+								<span class="font-weight-bold">by John Alvarado</span> - Feb 18
+							</h6>
 						</div>
-
 					</div>
 				</div>
 				<!-- Fin articles -->
-
 
 				<!-- Video % Tags -->
 				<div class="col-12 col-md-4">
 					<div class="row mt-5 mt-md-0">
 						<div class="col-12">
-							<h3 class="font-weight-bold py-3 pl-3 border-left-dark">Featured Video</h3>
-							<span><img src="images/video-01.jpg" alt="" class="img-fluid mt-4"></span>
+							<h5 class="font-weight-bold py-3 pl-3 border-left-dark">
+								Featured Video
+							</h5>
+							<span
+								><img src="images/video-01.jpg" alt="" class="img-fluid mt-4"
+							/></span>
 							<div class="bg-dark-grey">
-								<h5 class="text-white pt-3 pl-3">Music lorem ipsum dolor sit amet consectetur</h5>
-								<h6 class="text-grey pb-3 pl-3"><span class="font-weight-bold">by John Alvarado</span> - Feb 18</h6>
+								<h5 class="text-white pt-3 pl-3">
+									Music lorem ipsum dolor sit amet consectetur
+								</h5>
+								<h6 class="text-grey pb-3 pl-3">
+									<span class="font-weight-bold">by John Alvarado</span> - Feb
+									18
+								</h6>
 							</div>
 
 							<div class="bg-green mt-5 text-white">
 								<h4 class="px-4 pt-4 pb-2">Subscribe</h4>
-								<p class="px-4">Get all latest content delivered to your email a few times a month</p>
-								
-								<form action="" class=" px-4 pt-3 pb-4 d-flex justify-content-center align-center">
-								<input type="email" class="py-4 form-control" placeholder="Email">
+								<p class="px-4">
+									Get all latest content delivered to your email a few times a
+									month
+								</p>
+
+								<form
+									action=""
+									class="px-4 pt-3 pb-4 d-flex justify-content-center align-center"
+								>
+									<input
+										type="email"
+										class="py-4 form-control"
+										placeholder="Email"
+									/>
 								</form>
 							</div>
-
 						</div>
 
 						<div class="col-12 mt-5 mb-5">
-							<h3 class="font-weight-bold py-3 pl-3 border-left-dark mb-4">Tags</h3>
-							<button type="button" class="btn btn-outline-secondary rounded-pill btn-lg m-1">Fashion</button>
-							<button type="button" class="btn btn-outline-secondary rounded-pill btn-lg m-1">Lifestyle</button>
-							<button type="button" class="btn btn-outline-secondary rounded-pill btn-lg m-1">Denim</button>
-							<button type="button" class="btn btn-outline-secondary rounded-pill btn-lg m-1">Streetstyle</button>
-							<button type="button" class="btn btn-outline-secondary rounded-pill btn-lg m-1">Crafts</button>
-							<button type="button" class="btn btn-outline-secondary rounded-pill btn-lg m-1">Magazine</button>
-							<button type="button" class="btn btn-outline-secondary rounded-pill btn-lg m-1">News</button>
-							<button type="button" class="btn btn-outline-secondary rounded-pill btn-lg m-1">Blogs</button>
+							<h5 class="font-weight-bold py-3 pl-3 border-left-dark mb-4">
+								Tags
+							</h5>
+							<button
+								type="button"
+								class="btn btn-outline-secondary rounded-pill m-1"
+							>
+								Fashion
+							</button>
+							<button
+								type="button"
+								class="btn btn-outline-secondary rounded-pill m-1"
+							>
+								Lifestyle
+							</button>
+							<button
+								type="button"
+								class="btn btn-outline-secondary rounded-pill m-1"
+							>
+								Denim
+							</button>
+							<button
+								type="button"
+								class="btn btn-outline-secondary rounded-pill m-1"
+							>
+								Streetstyle
+							</button>
+							<button
+								type="button"
+								class="btn btn-outline-secondary rounded-pill m-1"
+							>
+								Crafts
+							</button>
+							<button
+								type="button"
+								class="btn btn-outline-secondary rounded-pill m-1"
+							>
+								Magazine
+							</button>
+							<button
+								type="button"
+								class="btn btn-outline-secondary rounded-pill m-1"
+							>
+								News
+							</button>
+							<button
+								type="button"
+								class="btn btn-outline-secondary rounded-pill m-1"
+							>
+								Blogs
+							</button>
 						</div>
 					</div>
 				</div>
@@ -656,14 +903,23 @@
 			<!-- Fin Articles, Video & Tags -->
 		</div>
 
-			<!-- FOOTER -->
+		<!-- FOOTER -->
 		<footer class="container-fluid mt-5 bg-dark-grey">
 			<div class="container">
 				<div class="row py-5">
 					<div class="col-12 col-md-4">
-						<span><img src="images/icons/logo-02.png" alt="" class="px-3 px-md-0"></span>
-						<p class="mt-4 px-3 px-md-0 text-light">Lorem ipsum dolor sit amet, consectetus adipiscing elit. Curabitur tempor magna eget elit efficitur, at accumsan sem placerat. Nulla tellus libero, mattis nec molestie at, facilisis ut turpis. Vestibulum dolor metus tincidunt eget odio</p>
-						<p class="mt-4 px-3 px-md-0 text-light">Any questions? Call us on (+1) 96 716 6879</p>
+						<span
+							><img src="images/icons/logo-02.png" alt="" class="px-3 px-md-0"
+						/></span>
+						<p class="mt-4 px-3 px-md-0 text-light">
+							Lorem ipsum dolor sit amet, consectetus adipiscing elit. Curabitur
+							tempor magna eget elit efficitur, at accumsan sem placerat. Nulla
+							tellus libero, mattis nec molestie at, facilisis ut turpis.
+							Vestibulum dolor metus tincidunt eget odio
+						</p>
+						<p class="mt-4 px-3 px-md-0 text-light">
+							Any questions? Call us on (+1) 96 716 6879
+						</p>
 						<div class="px-3 px-md-0">
 							<a href="">
 								<i class="fab fa-facebook-f pr-2" style="color: #ccc;"></i>
@@ -685,80 +941,105 @@
 					<div class="col-12 mt-5 col-md-4 mt-md-0">
 						<h5 class="text-white font-weight-bold px-3">Popular Posts</h5>
 						<div class="row"></div>
-							<div class="col-12">
-								<div class="row mt-md-3">
-									<div class="col-4 mt-3">
-										<span><img src="images/popular-post-01.jpg" alt="" class="img-fluid"></span>
-									</div>
-									<div class="col-8 mt-3 text-light">
-										<h5>Donec metus orci, malesuada et lecus vitae</h5>
-										<h5 class="text-secondary">Feb 17</h5>
-									</div>
+						<div class="col-12">
+							<div class="row mt-md-3">
+								<div class="col-4 mt-3">
+									<span
+										><img
+											src="images/popular-post-01.jpg"
+											alt=""
+											class="img-fluid"
+									/></span>
+								</div>
+								<div class="col-8 mt-3 text-light">
+									<h6>Donec metus orci, malesuada et lecus vitae</h6>
+									<h6 class="text-secondary">Feb 17</h6>
+								</div>
 
-									<div class="col-4 mt-5 mt-md-3">
-										<span><img src="images/popular-post-02.jpg" alt="" class="img-fluid"></span>
-									</div>
-									<div class="col-8 mt-5 mt-md-2 text-light">
-										<h5>Lorem ipsum dolor sit amet, consectetur</h5>
-										<h5 class="text-secondary"><span class="font-weight-bold">Flight</span>  - Feb 16</h5>
-									</div>
-									
-									<div class="col-4 mt-5 mt-md-3">
-										<span><img src="images/popular-post-03.jpg" alt="" class="img-fluid"></span>
-									</div>
-									<div class="col-8 mt-5 mt-md-2 text-light">
-										<h5>Suspendisse dictum enim quis imperdiet auctor</h5>
-										<h5 class="text-secondary"><span class="font-weight-bold">Culture</span>  - Feb 12</h5>
-									</div>
+								<div class="col-4 mt-5 mt-md-3">
+									<span
+										><img
+											src="images/popular-post-02.jpg"
+											alt=""
+											class="img-fluid"
+									/></span>
+								</div>
+								<div class="col-8 mt-5 mt-md-2 text-light">
+									<h6>Lorem ipsum dolor sit amet, consectetur</h6>
+									<h6 class="text-secondary">
+										<span class="font-weight-bold">Flight</span> - Feb 16
+									</h6>
+								</div>
+
+								<div class="col-4 mt-5 mt-md-3">
+									<span
+										><img
+											src="images/popular-post-03.jpg"
+											alt=""
+											class="img-fluid"
+									/></span>
+								</div>
+								<div class="col-8 mt-5 mt-md-2 text-light">
+									<h6>Suspendisse dictum enim quis imperdiet auctor</h6>
+									<h6 class="text-secondary">
+										<span class="font-weight-bold">Culture</span> - Feb 12
+									</h6>
 								</div>
 							</div>
-
 						</div>
+					</div>
 					<div class="col-12 mt-5 mb-3 col-md-4 mt-md-0">
-						<h4 class="text-white font-weight-bold px-3 mb-4">Category</h4>
+						<h5 class="text-white font-weight-bold px-3 mb-4">Category</h5>
 						<div class="mx-3 border-bottom-grey">
-						<a href="" class="text-light"><h5>Fashion(22)</h5></a>
+							<a href="" class="text-light"><h6>Fashion(22)</h6></a>
 						</div>
 
 						<div class="mx-3 border-bottom-grey mt-3">
-						<a href="" class="text-light"><h5>Technology(29)</h5></a>
+							<a href="" class="text-light"><h6>Technology(29)</h6></a>
 						</div>
 
 						<div class="mx-3 border-bottom-grey mt-3">
-						<a href="" class="text-light"><h5>Street Style(15)</h5></a>
+							<a href="" class="text-light"><h6>Street Style(15)</h6></a>
 						</div>
 
 						<div class="mx-3 border-bottom-grey mt-3">
-						<a href="" class="text-light"><h5>Life Style(28)</h5></a>
+							<a href="" class="text-light"><h6>Life Style(28)</h6></a>
 						</div>
 
 						<div class="mx-3 mt-3">
-						<a href="" class="text-light"><h5>DIY & Crafts(16)</h5></a>
+							<a href="" class="text-light"><h6>DIY & Crafts(16)</h6></a>
 						</div>
-
-
 					</div>
 				</div>
-
 			</div>
-			
 		</footer>
-		
+
 		<div class="bg-dark-black text-white py-4">
-			<h6 class="text-white d-flex justify-content-center">Copyright © 2018
+			<h6 class="text-white d-flex justify-content-center">
+				Copyright © 2018
 				<a href="" class="text-success px-2">Colorlib.</a>
 				All rights reserved
 			</h6>
-			
 		</div>
 
+		<!-- FIN FOOTER -->
 
-			<!-- FIN FOOTER -->
-			
-		
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"
+		></script>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.slim.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>

@@ -7,7 +7,9 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<link
 			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
 		/>
 		<link
 			rel="stylesheet"
@@ -17,57 +19,58 @@
 		<title>Entertainment</title>
 	</head>
 	<body>
-		<div class="container">
-			<!-- Margen superior -->
-			<div
-				class="row bg-dark text-center text-white-50 pt-3 pb-3 d-none d-md-block"
-			>
-				<div class="col-3">
-					<span class="text-nowrap">
-						New York, NY
-						<img src="images/icons/icon-night.png" alt="" />
-						HI 58º LO 56º
-					</span>
-				</div>
+		<!-- Margen superior -->
+		<div class="container-fluid bg-dark-grey d-none d-md-block">
+			<div class="container">
+				<div class="row text-center text-grey pt-3 pb-3 text-nowrap">
+					<div class="col-4">
+						<span>
+							New York, NY
+							<img src="images/icons/icon-night.png" alt="" />
+							HI 58º LO 56º
+						</span>
+					</div>
 
-				<div class="col-1">
-					<a href="" class="text-reset">About</a>
-				</div>
-				<div class="col-1">
-					<a href="" class="text-reset">Contact</a>
-				</div>
-				<div class="col-1">
-					<a href="" class="text-reset text-nowrap">Sign up </a>
-				</div>
-				<div class="col-1">
-					<a href="" class="text-reset">Log in</a>
-				</div>
+					<div class="col-1">
+						<a href="" class="text-reset">About</a>
+					</div>
+					<div class="col-1">
+						<a href="" class="text-reset">Contact</a>
+					</div>
+					<div class="col-1">
+						<a href="" class="text-reset">Sign up </a>
+					</div>
+					<div class="col-1">
+						<a href="" class="text-reset">Log in</a>
+					</div>
 
-				<div class="col-2 offset-3">
-					<!-- iconos redes sociales -->
-					<a href="">
-						<i class="fab fa-facebook-f pr-2" style="color: #ccc;"></i>
-					</a>
-					<a href="">
-						<i class="fab fa-twitter pr-2" style="color: #ccc;"></i>
-					</a>
-					<a href="">
-						<i class="fab fa-pinterest-p pr-2" style="color: #ccc;"></i>
-					</a>
-					<a href="">
-						<i class="fab fa-vimeo-v pr-2" style="color: #ccc;"></i>
-					</a>
-					<a href="">
-						<i class="fab fa-youtube pr-2" style="color: #ccc;"></i>
-					</a>
+					<div class="col-2 offset-2">
+						<!-- iconos redes sociales -->
+						<a href="">
+							<i class="fab fa-facebook-f pr-2" style="color: #ccc;"></i>
+						</a>
+						<a href="">
+							<i class="fab fa-twitter pr-2" style="color: #ccc;"></i>
+						</a>
+						<a href="">
+							<i class="fab fa-pinterest-p pr-2" style="color: #ccc;"></i>
+						</a>
+						<a href="">
+							<i class="fab fa-vimeo-v pr-2" style="color: #ccc;"></i>
+						</a>
+						<a href="">
+							<i class="fab fa-youtube pr-2" style="color: #ccc;"></i>
+						</a>
+					</div>
 				</div>
 			</div>
+		</div>
+		<!-- Fin margen superior -->
 
-			<!-- Fin margen superior -->
-
+		<div class="container">
 			<!-- Logo y Navegacion -->
 
-			<div class="row mt-3">
+			<div class="row mt-3 shadow-bottom-grey mb-4">
 				<div class="col-8 pt-2 col-md-4 pt-md-4 order-first">
 					<span><img src="images/icons/logo-01.png" alt="" /></span>
 				</div>
@@ -100,6 +103,9 @@
 									>
 										Home
 									</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="index.html">Home Page</a>
+									</div>
 								</li>
 								<li class="nav-item dropdown">
 									<a
@@ -223,9 +229,13 @@
 										Features
 									</a>
 									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-										<a class="dropdown-item" href="#">Action</a>
-										<a class="dropdown-item" href="#">Another action</a>
-										<a class="dropdown-item" href="#">Something else here</a>
+										<a class="dropdown-item" href="category.html">Category</a>
+										<a class="dropdown-item" href="bloglist.html">Blog</a>
+										<a class="dropdown-item" href="blogdetails.html"
+											>Blog details</a
+										>
+										<a class="dropdown-item" href="contact.html">Contact Us</a>
+										<a class="dropdown-item" href="about.html">About Us</a>
 									</div>
 								</li>
 							</ul>
@@ -255,14 +265,16 @@
 					</h6>
 				</div>
 				<div class="col-12 col-md-3 d-flex justify-content-md-end">
-					<form class="form-inline my-2 my-md-0">
+					<form
+						class="form-inline my-2 my-md-0 border rounded-pill d-flex flex-nowrap"
+					>
 						<input
-							class="form-control mr-sm-2 rounded-pill"
+							class="form-control mr-sm-2 rounded-pill border-0"
 							type="search"
 							placeholder="Search"
 							aria-label="Search"
 						/>
-						<!-- <span><i class="fas fa-search"></i></span> -->
+						<i class="fas fa-search pr-3 text-secondary"></i>
 					</form>
 				</div>
 			</div>
@@ -272,21 +284,21 @@
 			<!-- Header -->
 
 			<div class="row">
-				<div class="col-12 col-md-6 text-image px-md-1">
+				<div class="col-12 col-md-6 text-position px-md-1">
 					<span
 						><img src="images/entertaiment-01.jpg" alt="" class="img-fluid"
 					/></span>
 					<div
 						class="image-text pl-4 pr-4 text-white pb-3 d-flex flex-column justify-content-center"
 					>
-						<h5><small class="border font-weight-bold">Celebrity</small></h5>
-						<h4>Music quisque at ipsum vel orci eleifend ultrices</h4>
-						<h5><small>Jack Sims - Feb 16</small></h5>
+						<h6><small class="border font-weight-bold">Celebrity</small></h6>
+						<h5>Music quisque at ipsum vel orci eleifend ultrices</h5>
+						<h6><small>Jack Sims - Feb 16</small></h6>
 					</div>
 				</div>
 				<div class="col-12 col-md-6 p-md-0 m-md-0">
 					<div class="row">
-						<div class="col-12 col-md-6 text-image mt-1 m-md-0 pr-md-1">
+						<div class="col-12 col-md-6 text-position mt-1 m-md-0 pr-md-1">
 							<span
 								><img src="images/entertaiment-02.jpg" alt="" class="img-fluid"
 							/></span>
@@ -296,10 +308,12 @@
 								<h6>
 									<small class="border font-weight-bold">Game</small>
 								</h6>
-								<h5>Pellentesque dui nibh, pellen-tesque ut dapibus ut</h5>
+								<h6>
+									Pellentesque dui nibh, pellen-tesque ut dapibus ut
+								</h6>
 							</div>
 						</div>
-						<div class="col-12 col-md-6 text-image mt-1 m-md-0 pl-md-1">
+						<div class="col-12 col-md-6 text-position mt-1 m-md-0 pl-md-1">
 							<span
 								><img src="images/entertaiment-03.jpg" alt="" class="img-fluid"
 							/></span>
@@ -309,10 +323,12 @@
 								<h6>
 									<small class="border font-weight-bold">Music</small>
 								</h6>
-								<h5>Motobike Vestibulum vene-natis purus nec nibh volutpat</h5>
+								<h6>
+									Motobike Vestibulum vene-natis purus nec nibh volutpat
+								</h6>
 							</div>
 						</div>
-						<div class="col-12 col-md-6 text-image mt-1 pr-md-1">
+						<div class="col-12 col-md-6 text-position mt-1 pr-md-1">
 							<span
 								><img src="images/entertaiment-04.jpg" alt="" class="img-fluid"
 							/></span>
@@ -322,10 +338,12 @@
 								<h6>
 									<small class="border font-weight-bold">Game</small>
 								</h6>
-								<h5>Pellentesque dui nibh, pellen-tesque ut dapibus ut</h5>
+								<h6>
+									Pellentesque dui nibh, pellen-tesque ut dapibus ut
+								</h6>
 							</div>
 						</div>
-						<div class="col-12 col-md-6 text-image mt-1 mt-md-1 pl-md-1">
+						<div class="col-12 col-md-6 text-position mt-1 mt-md-1 pl-md-1">
 							<span
 								><img src="images/entertaiment-05.jpg" alt="" class="img-fluid"
 							/></span>
@@ -335,7 +353,9 @@
 								<h6>
 									<small class="border font-weight-bold">Music</small>
 								</h6>
-								<h5>Motobike Vestibulum vene-natis purus nec nibh volutpat</h5>
+								<h6>
+									Motobike Vestibulum vene-natis purus nec nibh volutpat
+								</h6>
 							</div>
 						</div>
 					</div>
@@ -563,44 +583,44 @@
 					</div>
 
 					<!-- Most popular -->
-					<h4 class="font-weight-bold py-3 pl-3 mt-5 border-left-dark">
+					<h5 class="font-weight-bold py-3 pl-3 mt-5 border-left-dark">
 						Most popular
-					</h4>
-					<h5 class="mt-5 mt-md-3 text-secondary text-justify d-flex">
+					</h5>
+					<h6 class="mt-5 mt-md-3 text-secondary text-justify d-flex">
 						<span
 							class="bg-secondary text-white rounded px-3 py-1 mr-4 align-self-center"
 							>1</span
 						>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit
-					</h5>
-					<h5 class="mt-5 mt-md-3 text-secondary text-justify d-flex">
+					</h6>
+					<h6 class="mt-5 mt-md-3 text-secondary text-justify d-flex">
 						<span
 							class="bg-secondary text-white rounded px-3 py-1 mr-4 align-self-center"
 							>2</span
 						>
 						Proin velit consectetur non neque
-					</h5>
-					<h5 class="mt-5 mt-md-3 text-secondary text-justify d-flex">
+					</h6>
+					<h6 class="mt-5 mt-md-3 text-secondary text-justify d-flex">
 						<span
 							class="bg-secondary text-white rounded px-3 py-1 mr-4 align-self-center"
 							>3</span
 						>
 						Nunc vestibulum, enim vitae condimen-tum volutpat lobortis ante
-					</h5>
-					<h5 class="mt-5 mt-md-3 text-secondary text-justify d-flex">
+					</h6>
+					<h6 class="mt-5 mt-md-3 text-secondary text-justify d-flex">
 						<span
 							class="bg-secondary text-white rounded px-3 py-1 mr-4 align-self-center"
 							>4</span
 						>
 						Proin velit justo consectetur non neque elementum
-					</h5>
-					<h5 class="mt-5 mt-md-3 text-secondary text-justify d-flex">
+					</h6>
+					<h6 class="mt-5 mt-md-3 text-secondary text-justify d-flex">
 						<span
 							class="bg-secondary text-white rounded px-3 py-1 mr-4 align-self-center"
 							>5</span
 						>
 						Proin velit consectetur non neque
-					</h5>
+					</h6>
 					<!-- Fin Most Popular -->
 					<!-- Banner -->
 					<span class="mt-5 d-flex justify-content-center align-center"
@@ -609,54 +629,54 @@
 					<!-- Fin Banner -->
 
 					<!-- Tags -->
-					<h4 class="font-weight-bold py-3 pl-3 border-left-dark mt-5 mb-4">
+					<h5 class="font-weight-bold py-3 pl-3 border-left-dark mt-5 mb-4">
 						Tags
-					</h4>
+					</h5>
 					<button
 						type="button"
-						class="btn btn-outline-secondary rounded-pill btn-lg m-1"
+						class="btn btn-outline-secondary rounded-pill m-1"
 					>
 						Fashion
 					</button>
 					<button
 						type="button"
-						class="btn btn-outline-secondary rounded-pill btn-lg m-1"
+						class="btn btn-outline-secondary rounded-pill m-1"
 					>
 						Lifestyle
 					</button>
 					<button
 						type="button"
-						class="btn btn-outline-secondary rounded-pill btn-lg m-1"
+						class="btn btn-outline-secondary rounded-pill m-1"
 					>
 						Denim
 					</button>
 					<button
 						type="button"
-						class="btn btn-outline-secondary rounded-pill btn-lg m-1"
+						class="btn btn-outline-secondary rounded-pill m-1"
 					>
 						Streetstyle
 					</button>
 					<button
 						type="button"
-						class="btn btn-outline-secondary rounded-pill btn-lg m-1"
+						class="btn btn-outline-secondary rounded-pill m-1"
 					>
 						Crafts
 					</button>
 					<button
 						type="button"
-						class="btn btn-outline-secondary rounded-pill btn-lg m-1"
+						class="btn btn-outline-secondary rounded-pill m-1"
 					>
 						Magazine
 					</button>
 					<button
 						type="button"
-						class="btn btn-outline-secondary rounded-pill btn-lg m-1"
+						class="btn btn-outline-secondary rounded-pill m-1"
 					>
 						News
 					</button>
 					<button
 						type="button"
-						class="btn btn-outline-secondary rounded-pill btn-lg m-1"
+						class="btn btn-outline-secondary rounded-pill m-1"
 					>
 						Blogs
 					</button>
@@ -715,8 +735,8 @@
 									/></span>
 								</div>
 								<div class="col-8 mt-3 text-light">
-									<h5>Donec metus orci, malesuada et lecus vitae</h5>
-									<h5 class="text-secondary">Feb 17</h5>
+									<h6>Donec metus orci, malesuada et lecus vitae</h6>
+									<h6 class="text-secondary">Feb 17</h6>
 								</div>
 
 								<div class="col-4 mt-5 mt-md-3">
@@ -728,10 +748,10 @@
 									/></span>
 								</div>
 								<div class="col-8 mt-5 mt-md-2 text-light">
-									<h5>Lorem ipsum dolor sit amet, consectetur</h5>
-									<h5 class="text-secondary">
+									<h6>Lorem ipsum dolor sit amet, consectetur</h6>
+									<h6 class="text-secondary">
 										<span class="font-weight-bold">Flight</span> - Feb 16
-									</h5>
+									</h6>
 								</div>
 
 								<div class="col-4 mt-5 mt-md-3">
@@ -743,34 +763,34 @@
 									/></span>
 								</div>
 								<div class="col-8 mt-5 mt-md-2 text-light">
-									<h5>Suspendisse dictum enim quis imperdiet auctor</h5>
-									<h5 class="text-secondary">
+									<h6>Suspendisse dictum enim quis imperdiet auctor</h6>
+									<h6 class="text-secondary">
 										<span class="font-weight-bold">Culture</span> - Feb 12
-									</h5>
+									</h6>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-12 mt-5 mb-3 col-md-4 mt-md-0">
-						<h4 class="text-white font-weight-bold px-3 mb-4">Category</h4>
+						<h5 class="text-white font-weight-bold px-3 mb-4">Category</h5>
 						<div class="mx-3 border-bottom-grey">
-							<a href="" class="text-light"><h5>Fashion(22)</h5></a>
+							<a href="" class="text-light"><h6>Fashion(22)</h6></a>
 						</div>
 
 						<div class="mx-3 border-bottom-grey mt-3">
-							<a href="" class="text-light"><h5>Technology(29)</h5></a>
+							<a href="" class="text-light"><h6>Technology(29)</h6></a>
 						</div>
 
 						<div class="mx-3 border-bottom-grey mt-3">
-							<a href="" class="text-light"><h5>Street Style(15)</h5></a>
+							<a href="" class="text-light"><h6>Street Style(15)</h6></a>
 						</div>
 
 						<div class="mx-3 border-bottom-grey mt-3">
-							<a href="" class="text-light"><h5>Life Style(28)</h5></a>
+							<a href="" class="text-light"><h6>Life Style(28)</h6></a>
 						</div>
 
 						<div class="mx-3 mt-3">
-							<a href="" class="text-light"><h5>DIY & Crafts(16)</h5></a>
+							<a href="" class="text-light"><h6>DIY & Crafts(16)</h6></a>
 						</div>
 					</div>
 				</div>
@@ -785,10 +805,24 @@
 			</h6>
 		</div>
 
-		<!-- Fin Footer -->
+		<!-- FIN FOOTER -->
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.slim.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"
+		></script>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
